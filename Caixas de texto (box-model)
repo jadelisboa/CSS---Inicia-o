@@ -1,0 +1,19 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+
+.box-model{
+    padding: 10% auto;
+    content: normal;
+    margin: auto;
+    box-sizing: border-box;
+    border: dotted, rgb(62, 13, 223); /*Dotted - contorno da caixa - o rgb determina a cor!*/
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
