@@ -1,3 +1,16 @@
+HTNL
+<body>
+    <center>
+        <div class="box-model">
+            <p>CAIXA!</p>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Feito por Jade Lisboa (11/09/2024)</p>
+
+    </div>
+
+CSS
 .footer{
     position: fixed;
     left: 0;
