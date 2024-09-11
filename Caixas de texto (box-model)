@@ -1,4 +1,5 @@
-HTNL
+HTML
+<link rel="stylesheet" href="aula.css">
 <body>
     <center>
         <div class="box-model">
