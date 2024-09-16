@@ -1,0 +1,16 @@
+CSS
+display: inline block; elementos na mesma linha
+max- width: largura máxima de determinada quantidade de px
+transition - transição de quando passar o mouse em cima do texto
+all - aplicar para todos
+border radius - arredondar as pontas
+[type="submit"] - apenas modificar oq está entre aspas e colchete
+line height - ajustar espaço entre linhas
+loren ipsum - criador de textos aleatórios
+font weight - grossura da fonte
+cursor - quando o ponteiro do mouse está sobre um elemento
+
+HTML
+<aside> representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo
+<span> é usado para agrupar e estilizar partes específicas de um texto dentro de um elemento HTML.
+<article> destina-se a marcar um conteúdo que se constitua em um componente autossuficiente em uma página, aplicação ou site e que possa ser distribuido ou reusado de forma independente (isolada)
