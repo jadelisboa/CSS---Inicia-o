@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+
+    flex-direction: row;
+    /*linha - uma ao lado da outra*/
+    flex-direction: column;
+    /*coluna - uma em baixo da outra*/
+
+    flex-wrap: wrap;
+    /*vai seguir o padão de tamanho sem quebra-lo (se nao caber na mesma linha, passa para próxima)*/
+
+    flex-wrap: nowrap;
+    /*irá colocar tudo ma mesma linha, alterando o tamanho para que tudo caiba.*/
+
+    propriedades
+    justify-content: space-between; /*maior espaço entre os elementos*/
+    justify-content: space-evenly; /*o mesmo espaço entre os elementos*/
+    justify-content: space-around; /*o iníco e o fim vão ter a metade do espaço dos espaços entre cada div*/
+    justify-content: flex-start; /*alinhamento por padrão*/
+    justify-content: flex-end; /*alinhamento dos ítens no final da linha da página*/
+
+    align-items: center; /*alinhar no eixo transversal*/
+    align-items: flex-start; /*alinhar em cima*/
+    align-items: flex-end;  /*alinhar embaixo*/
+
+    diferenças 
+    flex-direction: column; /*alinhar de cima para baixo           eixo y*/
+    flex-direction: row; /*alinhar da esquerda para direita        seixo x*/ 
+}
