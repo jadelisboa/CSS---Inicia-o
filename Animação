@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="18.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="cards">
+        <div class="cards">
+            <h3>Título</h3>
+            <p> Parágrafo do primeiro card</p>
+        </div>
+        <div class="cards">
+            <h3>Título 2</h3>
+            <p> Parágrafo do segundo card</p>
+        </div>
+        <div class="cards">
+            <h3>Título 3</h3>
+            <p> Parágrafo do terceiro card</p>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(49, 226, 43);
+    color: blue;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cards {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0 0 0);
+}
