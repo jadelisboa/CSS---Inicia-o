@@ -1,0 +1,40 @@
+
+/*celular*/
+@media screen and (max-widht: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    section{
+        padding: 10px;
+    }
+}
+
+/*tablet*/
+@media screen and (min-widht: 481px) and (max-widht: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+    section{
+        padding: 15px;
+    }
+}
+
+/*desktop*/
+@media screen and (min-widht: 769px){
+    header h1 {
+        font-size: 36px;
+    }
+    nav ul li{
+        margin: 0 20px;
+    }
+    section{
+        padding: 20px;
+    }
+}
