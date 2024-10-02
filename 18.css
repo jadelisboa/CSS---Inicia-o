@@ -1,0 +1,102 @@
+* {
+    /*tudo que estiver aqui dentro será universal, ou seja, mudará tudo.*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*box-sizing: border-box;  = indica que o tamanho agora levará em conta até a borda*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #d1e2f1);
+    /* linear-gradient =  auxilia na construção de efeitos degrade, da cor mais escura a mais clara*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* overflow: hidden;  = esconder a parte de um elemento para que ele não passe do tamanho determinado*/
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    /*rem = é o tamanho de fonte do elemento-raiz do documento. (tag)*/
+    margin-bottom: 1rem;
+    /*margin-bottom = define a margin area na parte inferior de um elemento*/
+    color: #333;
+}
+
+.box1 {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow = sombra 0 = topo e inferior  4 = direita  8 = esquerda*/
+    transition: transform 0.3s ease;
+    /*ease = efeito de animação*/
+}
+
+.box1:hover {
+    transform: scale(1.05) rotate(2deg);
+    /*deg = graus*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.imagem {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3 ease;
+    /*opacity - opacidade*/
+}
+
+.box:hover.imagem {
+    opacity: 0.8;
+    transform: translateY(-10px);
+    /*translate() = reposiciona um elemento na direção horizontal e/ou vertical.
+    translateY = em relação ao eixo Y*/
+}
+
+.text{
+    margin: 2rem;
+    padding: 1rem;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: bounce 2s infinite;
+    /*animation = adicionar animações*/
+    /*bounce = efeito de animação de quicar de cima para baixo*/
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+.animacao-text{
+    font-size: 1.25rem;
+    color: #fff;
+    transition: transform 0.3 ease, color 0.3 ease;
+}
+
+.animacao-box:hover .animacao-text{
+    transform: scale(1.1);
+    color: #333;
+}
+
+.desc{
+font-size: 1rem;
+margin-top: 1rem;
+color: #666;
+}
